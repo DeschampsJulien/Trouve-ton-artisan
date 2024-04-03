@@ -16,16 +16,16 @@ function Header() {
                             <Link to={""} className="nav-link active" aria-current="page" href="#">Accueil</Link>
                         </li> */}
                         <li className="nav-item">
-                            <Link to={""} className="nav-link" href="#">Bâtiment</Link>
+                            <Link to={""} className="nav-link">Bâtiment</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={""} className="nav-link" href="#">Services</Link>
+                            <Link to={""} className="nav-link">Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={""} className="nav-link" href="#">Fabrication</Link>
+                            <Link to={""} className="nav-link">Fabrication</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={""} className="nav-link" href="#">Alimentation</Link>
+                            <Link to={""} className="nav-link">Alimentation</Link>
                         </li>
                     </ul>
                     <form className="d-flex" role="search">

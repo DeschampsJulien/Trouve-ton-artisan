@@ -1,18 +1,14 @@
 import Step from "../components/step";
 import ArtisanCard from "../components/artisanCard";
 import ArtisansDatas from "../datas/datas.json";
+import ArtisansCategory from "./artisansCategory";
 
-// const Step = (props) => {
-
-//     return (
-//         <div className="d-flex flex-row list-group-item">
-//             <p className="m-2">{props.number}</p>
-//             <p className="m-2">{props.indication}</p>
-//         </div> 
-//     );
-// }
 
 function Home() {
+
+    // FILTRE ET SELECTIONNE LES ARTISANS POUR LA VALEUR "TOP" EQUIVALENTE A TRUE
+    const topArtisans = ArtisansDatas.filter(artisan => artisan.top === true);
+    
     return (
         <main>
             <section className="container">
@@ -26,10 +22,12 @@ function Home() {
                     <Step number="4" indication="Une réponse sera apportée sous 48h."/>
                 </div>
             </section>
+
             <section className="container">
-                <h2 className="text-center m-3">Liste des artisans</h2>
+                <h2 className="text-center m-3">Liste des Top artisans</h2>
                 <div className="row">
-                    {ArtisansDatas.map((artisan)=>(
+                    {/* RECUPERATION AVEC LE FILTRE "topArtisans" DE LA LISTE DES ARTISANS FICHIER DATAS.JSON */}
+                    {topArtisans.map((artisan)=>(
                         <ArtisanCard
                             // DECLARATION DES PROPS POUR LE COMPONENT ARTISANTCARD
                             name={artisan.name}
@@ -38,13 +36,14 @@ function Home() {
                             location={artisan.location}
                             // btn="En savoir plus"
                             // key={artisan.id}
-                            // id={artisan.id}
+                            id={artisan.id}
                         />
                     ))}
                 </div>
-            </section>
-
+            </section> 
             
+            <ArtisansCategory />
+
         </main>
     );
   }

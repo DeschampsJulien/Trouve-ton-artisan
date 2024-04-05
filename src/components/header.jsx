@@ -1,7 +1,15 @@
 // IMPORTATION DES MODULES POUR LE ROUTAGE
 import { Link } from 'react-router-dom';
+import { useState } from "react"
 
 function Header() {
+
+    // USESTATE STOCK LA VALEUR ETAT DE ACTIVELINK
+    const [activeLink, setActiveLink] = useState('/')
+
+    const handleLinkClick = (path) => {
+        setActiveLink(path);
+    };
 
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -16,11 +24,16 @@ function Header() {
                             <Link to={""} className="nav-link active" aria-current="page" href="#">Accueil</Link>
                         </li> */}
                         <li className="nav-item">
-                            <Link to={""} className="nav-link">Bâtiment</Link>
+                            <Link to="/batiment" className="nav-link">Bâtiment</Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link to={""} className="nav-link">Services</Link>
+                        </li> */}
+                        <li className={`nav-item ${activeLink === '/category/Services' ? 'active' : ''}`}>
+                            <Link to={"/category/Services"} className="nav-link" aria-current="page" onClick={() => handleLinkClick('/category/Services')}>Services</Link>
                         </li>
+
+
                         <li className="nav-item">
                             <Link to={""} className="nav-link">Fabrication</Link>
                         </li>

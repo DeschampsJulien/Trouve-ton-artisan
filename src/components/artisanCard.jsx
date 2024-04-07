@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 // PROPS RECUPERE LES VALEURS NAME, SPECIALTY, EXT.. DECLAREES DANS LA BALISE ARTISANCARD
 function ArtisanCard (props) { 
+
     return (  
         <div className="col-lg-4 col-md-6">
             <div className="card text-center m-3">
@@ -12,23 +13,7 @@ function ArtisanCard (props) {
                     <p className="card-text">{props.specialty}</p>
                     <p className="card-text">Note: {props.note}/5</p>
                     <p className="card-text">{props.location}</p>
-                    <Link to={`/contact/${props.id}`} class="btn btn-primary">Contact</Link>
-
-                    {/* <Link to={`/details/${props.id}`} className="btn btn-outline-primary">
-                                    {props.btn}
-                                </Link>
-                            
-                                <Button
-                                    linkPage={`/entreprise/${props.nameEntreprise}`}
-                                    type="link"
-                                    buttonName="En savoir plus"
-                                    color="red"
-                                />
-
-                                <Link
-                                    to={`/artisan/${artisan.id}`}
-                                    className="text-dark text-decoration-none"
-                                ></Link> */}
+                    <Link to={`/contact/${props.id}`} className="btn btn-primary">Contact</Link>
                 </div>
             </div>      
         </div>

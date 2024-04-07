@@ -19,9 +19,6 @@ function Batiment() {
                             specialty={artisan.specialty}
                             note={artisan.note}
                             location={artisan.location}
-                            // btn="En savoir plus"
-                            // key={artisan.id}
-                            // id={artisan.id}
                         />
                     ))}
 
@@ -31,4 +28,4 @@ function Batiment() {
     );
 }
   
-  export default Batiment;
+export default Batiment;

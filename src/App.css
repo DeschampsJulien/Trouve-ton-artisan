@@ -1,5 +1,58 @@
-@import "./assets/fonts.scss";
+@import "./assets/styles/fonts.scss";
 
 .App {
   font-family: "Graphik-Bold", sans-serif;
 }
+
+/* DEBUT ANIMATION LOGO ET LINK HEADER */
+.App-header-logo {
+  color: #eee;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.App-header-logo:hover {
+  color: rgba(255,255,255,0.8)
+}
+.App-header-logo:focus {
+  animation: jello-horizontal 0.9s both;
+  color: gold;
+  transition: color 0.9s;
+}
+
+.App-header-link{
+  color: #eee;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.App-header-link:hover {
+  color: rgba(255,255,255,0.8)
+}
+.App-header-link:focus {
+  animation: jello-horizontal 0.9s both;
+  color:#0d6efd;
+  transition: color 0.9s;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* FIN ANIMATION LOGO ET LINK HEADER */

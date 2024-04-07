@@ -6,8 +6,7 @@ import Footer from "./components/footer";
 
 import Home from "./pages/Home";
 import ArtisansCategory from "./pages/artisansCategory";
-import ArtisansCardContact from "./components/artisansCardContact";
-import Batiment from "./pages/batiment";
+import ArtisansContact from "./pages/artisansContact";
 
 import './App.css';
 
@@ -17,9 +16,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/batiment" element={<Batiment />} />
-        <Route path="/category/:artisanCategory" element={<ArtisansCategory />} />
-        <Route path="/contact/:artisanId" element={<ArtisansCardContact />} />
+        <Route path="/category/:artisansCategory" element={<ArtisansCategory />} />
+        <Route path="/contact/:artisanId" element={<ArtisansContact />} />
       </Routes>
       
       <Footer />

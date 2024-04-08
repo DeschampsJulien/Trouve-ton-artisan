@@ -1,20 +1,38 @@
 // IMPORTATION DES MODULES POUR LE ROUTAGE
-import { Link } from 'react-router-dom';
-import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import Logo from "../assets/pictures/logo.png";
 
-function Header() {
+
+
+function Header({ onSearch }) {
 
     // USESTATE STOCK LA VALEUR ETAT DE ACTIVELINK
-    const [activeLink, setActiveLink] = useState('/')
+    const [activeLink, setActiveLink] = useState("/");
     // 
     const clickLink = (path) => {
         setActiveLink(path);
     };
 
+
+
+    const [searchValue, setSearchValue] = useState("")
+    const navigate = useNavigate()
+
+    const handleSearchChange = (e) => {
+        setSearchValue(e.target.value)
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onSearch(searchValue);
+        navigate("/results")
+    }
+    
+
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <header className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <Link to={"/"} className="navbar-brand" href="#">
                     {/* tabIndex est un attribut global qui permet à un élément HTML de recevoir le focus. */}
@@ -25,9 +43,11 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
                         {/* <li className="nav-item">
-                            <Link to="/batiment" className="nav-link">Bâtiment</Link>
+                            <Link to={`/contact/${props.id}`} className="btn btn-primary">Essais</Link>
                         </li> */}
+
                         <li className={`nav-item ${activeLink === "/category/Bâtiment" ? "active" : ""}`}>
                             <Link to="/category/Bâtiment" className="nav-link" aria-current="page" onClick={() => clickLink ('/category/Bâtiment')}>Bâtiment</Link>
                         </li>
@@ -53,13 +73,21 @@ function Header() {
                             <Link to={"/category/Alimentation"} className="nav-link" aria-current="page" onClick={() => clickLink ('/category/Alimentation')}>Alimentation</Link>
                         </li>
                     </ul>
-                    <form className="d-flex" role="search">
+
+
+                    {/* <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                         <button className="btn btn-outline-success" type="submit">Search</button>
+                    </form> */}
+                    <form className="d-flex border-bottom border-end" role="search" onSubmit={handleSubmit}>
+                        <input className="form-control me-2" type="search" placeholder="Recherche"
+                            aria-label="Search" onChange={handleSearchChange}></input>
+                        <button className="btn btn-outline-success" type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
                     </form>
+
                 </div>
             </div>
-        </nav>
+        </header>
     );
 }
   

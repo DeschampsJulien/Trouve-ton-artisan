@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import ArtisanCardContact from "../components/artisanCardContact";
 import ArtisansDatas from '../datas/datas.json';
+import ArtisanCardContact from "../components/artisanCardContact";
 
 
 function ArtisansContact () {
@@ -17,15 +17,16 @@ function ArtisansContact () {
                 {/* RECUPERATION AVEC LE FILTRE DE LA LISTE DES ARTISANS FICHIER DATAS.JSON */}
                 {selectedArtisans.map((artisan)=>(
                     <ArtisanCardContact
-                    // DECLARATION DES PROPS POUR LE COMPONENT ARTISANTCARDCONTACT
-                    id={artisan.id}
-                    name={artisan.name}
-                    specialty={artisan.specialty}
-                    note={artisan.note}
-                    location={artisan.location}
-                    email={artisan.email}
-                    website={artisan.website}
-                />
+                        // DECLARATION DES PROPS POUR LE COMPONENT ARTISANTCARDCONTACT
+                        id={artisan.id}
+                        name={artisan.name}
+                        specialty={artisan.specialty}
+                        location={artisan.location}
+                        note={artisan.note}
+                        email={artisan.email}
+                        website={artisan.website}
+                        about={artisan.about}
+                    />
                 ))}
             </div>
         </section>

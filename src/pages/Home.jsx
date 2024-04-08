@@ -2,13 +2,15 @@ import Step from "../components/step";
 import ArtisanCard from "../components/artisanCard";
 import ArtisansDatas from "../datas/datas.json";
 
+import Test from "../components/test";
+
 function Home() {
 
     // FILTRE ET SELECTIONNE LES ARTISANS POUR LA VALEUR "TOP" EQUIVALENTE A TRUE
-    const artisans = ArtisansDatas.filter(artisan => artisan.top === true);
+    const artisansTop = ArtisansDatas.filter(artisan => artisan.top === true);
     
     // OU FILTRE ET SELECTIONNE LES ARTISANS POUR LA VALEUR "CATEGORY" EQUIVALENTE A BATIMENT
-    // const artisans = ArtisansDatas.filter(artisan => artisan.category === "Bâtiment");
+    // const artisansBatiment = ArtisansDatas.filter(artisan => artisan.category === "Bâtiment");
 
     return (
         <main>
@@ -28,9 +30,10 @@ function Home() {
                 <h2 className="text-center m-3">Liste des Top artisans</h2>
                 <div className="row">
                     {/* RECUPERATION AVEC LE FILTRE "artisans" DE LA LISTE DES ARTISANS FICHIER DATAS.JSON */}
-                    {artisans.map((artisan)=>(
+                    {artisansTop.map((artisan)=>(
                         <ArtisanCard
                             // DECLARATION DES PROPS POUR LE COMPONENT ARTISANTCARD
+                            id={artisan.id}
                             name={artisan.name}
                             specialty={artisan.specialty}
                             note={artisan.note}
@@ -39,6 +42,9 @@ function Home() {
                     ))}
                 </div>
             </section> 
+
+            <Test />
+    
         </main>
     );
   }

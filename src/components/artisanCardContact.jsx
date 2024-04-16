@@ -8,7 +8,7 @@ function ArtisanCardContact (props) {
                 <div className="card-body">
                     {/* RECUPERATION D'UNE IMAGE */}
                     {/* <div className="my-4 mx-2">{<img className="img-fluid" src={user.avatar_url} alt="Avatar John Doe" />}</div> */}
-                    <h3 className="card-title">{props.name}</h3>
+                    <h3 className="card-title rounded p-3">{props.name}</h3>
                     <p className="card-text">{props.specialty}</p>
                     <p className="card-text">{props.location}</p>
                     <Rating 
@@ -20,12 +20,12 @@ function ArtisanCardContact (props) {
                 </div>
             </div>
             <div className="card text-center m-3">
-                <div className="card-body">
+                <article className="card-body">
                     {/* RECUPERATION D'UNE IMAGE */}
                     {/* <div className="my-4 mx-2">{<img className="img-fluid" src={user.avatar_url} alt="Avatar John Doe" />}</div> */}
-                    <h3>A propos</h3>
+                    <h3 className="card-title rounded p-3">A propos</h3>
                     <p className="card-text">{props.about}</p>
-                </div>
+                </article>
             </div>
         </div>
     )

@@ -1,10 +1,11 @@
 import ArtisansDatas from '../datas/datas.json';
-import ArtisanCard from "../components/artisanCard"
+import ArtisanCard from "../components/artisanCard";
 
 function searchResult ({ searchValue }) {
     
-    const results = ArtisansDatas.filter(artisan => artisan.specialty.toLowerCase().includes(searchValue.toLowerCase())
-        || artisan.name.toLowerCase().includes(searchValue.toLowerCase())
+    // FILTRE DE RECHERCHE EN FONCTION DES TROIS OPTIONS "NAME, SPECIALTY, LOCATION"
+    const results = ArtisansDatas.filter(artisan => artisan.name.toLowerCase().includes(searchValue.toLowerCase())
+        || artisan.specialty.toLowerCase().includes(searchValue.toLowerCase())
         || artisan.location.toLowerCase().includes(searchValue.toLowerCase()))
 
     let content
@@ -18,20 +19,45 @@ function searchResult ({ searchValue }) {
                 location={artisan.location}
                 note={artisan.note}
             />
-        ))
+        ));
 
         content = (
-            <div>
-                <h1>Le résultat de votre recherche</h1>
-                <div className="sep1"></div>
-                <div className="row list-card">{artisans}</div>
-            </div>
-        )
-    } else {
-        content = <h2>Aucun résultat trouvé pour "{searchValue}"</h2>;
+            <main>
+                <div className="decoration-main">
+                    <div className="decoration-main-left"></div>
+                    <div className="decoration-main-center"></div>
+                    <div className="decoration-main-right"></div>
+                </div>
+                <section className="container">
+                    <h2 className="text-center m-5">Liste de vôtre recherche</h2>
+                    <div className="row">
+                        {artisans}
+                    </div>
+                </section>
+            </main>
+        );
+    } 
+    
+    else {
+        content = (
+            <main>
+                <div className="decoration-main">
+                    <div className="decoration-main-left"></div>
+                    <div className="decoration-main-center"></div>
+                    <div className="decoration-main-right"></div>
+                </div>
+                <section className="container">
+                <h2 className="text-center m-5">Aucun résultat trouvé pour "{searchValue}"</h2>
+                </section>
+            </main>
+        );
     }
 
-    return <section className="page">{content}</section>;
+    return (
+        <main>
+            {content}
+        </main>
+    );
 }
 
 export default searchResult;

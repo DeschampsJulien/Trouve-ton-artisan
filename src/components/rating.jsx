@@ -1,7 +1,7 @@
 // RECUPERATION DES VALEURS DE STARS ET DE NOTE DECLAREES DANS LA BALISE RATING
 function Rating ({stars, note}) { 
 
-    const fullStars = Array(5).fill(<i className="fa-solid fa-star"></i>);
+    const fullStars = Array(5).fill(<i className="rating fa-solid fa-star"></i>);
     const emptyStars = Array(5).fill(<i className="fa-regular fa-star"></i>);
 
     const parsedNote = parseFloat(stars);

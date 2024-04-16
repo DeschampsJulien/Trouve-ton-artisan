@@ -1,0 +1,253 @@
+@import "./assets/styles/fonts.scss";
+@import "./assets/styles/colors.scss";
+
+
+// BACKGROUND DU SITE -----------
+.App {
+  background-color: $color1;
+}
+
+
+// DEBUT HEADER ---------------
+header {
+  background-color: $color0;
+
+  .nav-link {
+    color: $color4;
+
+    font: {
+      family: "Graphik-Bold", sans-serif;
+      size: 1.2rem;
+      weight: normal;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      color: $color6;
+    }
+  }
+
+  .App-header-logo {
+    &:hover {
+      border-right: 2px solid $color4;
+    }
+  }
+}
+
+
+// DEBUT MAIN ---------------
+main {
+  background-color: $color1;
+
+  h1, h2, p {
+    color: $color3;
+
+    font: {
+      family: "Graphik-Bold", sans-serif;
+      size: 2rem;
+      weight: normal;
+    }
+  }
+
+  .step {
+    background-color: $color1;
+
+    p {
+      color: $color6;
+  
+      font: {
+        family: "Graphik-Regular", sans-serif;
+        size: 1.5rem;
+        weight: normal;
+      }
+    }
+  }
+
+  // DEBUT DECORATION MAIN ----------
+  .decoration-main {
+    background-color: $color0;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    
+    .decoration-main-left {
+      background-color: $color1;
+      width: 3%;
+      height: 5vh;
+      border-top-left-radius: 50%;
+    }
+
+    .decoration-main-center {
+      background-color: $color1;
+      width: 74%;
+      height: 5vh;
+      border-top: 5px solid $color5;
+    }
+
+    .decoration-main-right {
+      background-color: $color1;
+      width: 3%;
+      height: 5vh;
+      border-top-right-radius: 50%;
+      border-top: 5px solid $color5;
+      border-right: 3px solid $color5;
+    }
+  }
+}
+
+
+// DEBUT FOOTER ---------------
+footer {
+  background-color: $color2;
+
+  h4, p {
+    color:$color4;
+
+    font: {
+      family: "Graphik-Bold", sans-serif;
+      size: 1.0rem;
+      weight: normal;
+    }
+  }
+
+  .nav-link {
+    color: $color1;
+
+    font: {
+      family: "Graphik-Bold", sans-serif;
+      size: 1.2rem;
+      weight: normal;
+    }
+
+    &:focus {
+      color: $color6;
+    }
+  }
+
+  // DEBUT DECORATION FOOTER ----------
+  .decoration-footer {
+    background-color: $color2;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    
+    .decoration-footer-left {
+      background-color: $color1;
+      width: 3%;
+      height: 5vh;
+      border-bottom-left-radius: 50%;
+      border-bottom: 5px solid $color5;
+      border-left: 3px solid $color5;
+    }
+
+    .decoration-footer-center {
+      background-color: $color1;
+      width: 74%;
+      height: 5vh;
+      border-bottom: 5px solid $color5;
+    }
+
+    .decoration-footer-right {
+      background-color: $color1;
+      width: 3%;
+      height: 5vh;
+      border-bottom-right-radius: 50%;
+    }
+  } 
+}
+
+
+// DEBUT CARD ---------------
+.card {
+  background-color: $color0;
+  
+  h3 {
+    color: $color4;
+
+    font: {
+      family: "Graphik-Bold", sans-serif;
+      size: 2rem;
+      weight: normal;
+    }
+  }
+
+  p {
+    color: $color4;
+
+    font: {
+      family: "Graphik-Light", sans-serif;
+      size: 1.5rem;
+      weight: normal;
+    }
+  }
+
+  .card-title {
+    background-color: $color2;
+  }
+
+  .btn {
+    background-color: $color2;
+
+    font: {
+      family: "Graphik-Regular", sans-serif;
+      size: 1rem;
+      weight: normal;
+    }
+    
+    &:hover {
+      background-color: $color6;
+    }
+  }
+}
+
+
+// DEBUT FORM ---------------
+form {
+  .btn {
+    background-color: $color2;
+
+    font: {
+      family: "Graphik-Regular", sans-serif;
+      size: 1rem;
+      weight: normal;
+    }
+    
+    &:hover {
+      background-color: $color6;
+    }
+  }
+}
+
+
+// DEBUT LOGO ERREUR 404 -----------
+.error {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 60px black, 30px 0 60px grey;
+  display: block;
+  margin: auto;
+} 
+
+
+// DEBUT LOGO FELICITATION ----------
+.felicitation {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 60px goldenrod, 30px 0 60px gold;
+  display: block;
+  margin: auto;
+}
+
+
+// DEBUT RATING ---------------
+.rating {
+  color: gold;
+}
+

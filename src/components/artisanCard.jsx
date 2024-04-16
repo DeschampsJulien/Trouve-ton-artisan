@@ -8,7 +8,7 @@ function ArtisanCard (props) {
         <div className="col-lg-4 col-md-6">
             <div className="card text-center m-3">
                 <div className="card-body">
-                    <h3 className="card-title">{props.name}</h3>
+                    <h3 className="card-title rounded p-3">{props.name}</h3>
                     <p className="card-text">{props.specialty}</p>
                     <p className="card-text">{props.location}</p>
                     <Rating 

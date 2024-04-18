@@ -1,5 +1,5 @@
-import Step from "../components/step";
-import ArtisanCard from "../components/artisanCard";
+import Step from "../components/step/step";
+import ArtisanCard from "../components/artisanCard/artisanCard";
 import ArtisansDatas from "../datas/datas.json";
 
 // import ArtisanBoulanger from "../assets/pictures/artisan-boulanger.jpg";

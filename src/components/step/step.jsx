@@ -1,3 +1,5 @@
+import "./step.scss";
+
 // PROPS RECUPERE LES VALEURS NUMBER ET INDICATION DECLAREES DANS LA BALISE STEP
 function Step (props) {
 

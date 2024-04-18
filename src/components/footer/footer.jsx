@@ -2,6 +2,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+import "./footer.scss";
+
 function Footer() {
 
     // USESTATE STOCK LA VALEUR INITIALE DE ACTIVELINK

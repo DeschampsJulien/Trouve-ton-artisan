@@ -1,0 +1,44 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts.scss"; 
+
+header {
+      background-color: $color0;
+    
+      .nav-link {
+            color: $color4;
+    
+            font: {
+                  family: "Graphik-Bold", sans-serif;
+                  size: 1.2rem;
+                  weight: normal;
+            }
+    
+            &:hover {
+                  text-decoration: underline;
+            }
+    
+            &:focus {
+                  color: $color6;
+            }
+      }
+    
+      // .App-header-logo {
+      //   &:hover {
+      //     border-right: 2px solid $color4;
+      //   }
+      // }
+      .shadow-drop-center {
+            box-shadow: 0 0 10px 0px $color4;
+            border-radius: 10px;
+    
+            &:hover {
+                  box-shadow: 0 0 20px 0px $color6;
+                  border-radius: 10px;
+            }  
+    
+            &:focus {
+                  box-shadow: 0 0 20px 0px $color6;
+                  border-radius: 10px;
+            } 
+      }
+}

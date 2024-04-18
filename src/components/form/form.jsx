@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import Felicitation from "../assets/pictures/felicitation.jpg";
+
+import Felicitation from "../../assets/pictures/felicitation.jpg";
+
+import "./form.scss";
 
 function Formulaire() {  
 

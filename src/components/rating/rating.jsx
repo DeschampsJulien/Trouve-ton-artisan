@@ -1,5 +1,7 @@
+import "./rating.scss";
+
 // RECUPERATION DES VALEURS DE STARS ET DE NOTE DECLAREES DANS LA BALISE RATING
-function Rating ({stars, note}) { 
+function Rating ({stars}) { 
 
     const fullStars = Array(5).fill(<i className="rating fa-solid fa-star"></i>);
     const emptyStars = Array(5).fill(<i className="fa-regular fa-star"></i>);
@@ -17,7 +19,6 @@ function Rating ({stars, note}) {
             {emptyStarsCount.map((emptyStarsCount) => (
                 <span>{emptyStarsCount}</span>
             ))}
-            <p className="card-text">Note: {note}/5</p>
         </div>
     );
 }

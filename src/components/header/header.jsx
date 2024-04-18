@@ -2,7 +2,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-import Logo from "../assets/pictures/logo.png";
+import Logo from "../../assets/pictures/logo.png";
+import BurgerMenu from "../../components/burgerMenu/burgerMenu";
+
+import "./header.scss";
 
 
 
@@ -34,14 +37,15 @@ function Header({ onSearch }) {
         <header className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 <Link to={"/"} className="navbar-brand" href="#">
-                    <img src={Logo} width="220" alt="logo du site trouve ton artisan région Auvergne Rhône-Alpes" className="App-header-logo" />
+                    <img src={Logo} width="200" alt="logo du site trouve ton artisan région Auvergne Rhône-Alpes" className="shadow-drop-center" tabIndex={0} />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    {/* <span className="navbar-toggler-icon"></span> */}
+                    <BurgerMenu />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav me-auto mx-3 mb-2 mb-lg-0">
                         {/* <li className={`nav-item ${activeLink === "/category/Bâtiment" ? "active" : ""}`}>
                             <Link to="/category/Bâtiment" className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Bâtiment")}>Bâtiment</Link>
                         </li> */}

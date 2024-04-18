@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import ArtisansDatas from '../datas/datas.json';
-import ArtisanCard from "../components/artisanCard";
+import ArtisanCard from "../components/artisanCard/artisanCard";
 
 function ArtisansCategory () {
   // USEPARAMS HOOK PERMET D'ACCEDER AUX PARAMETRES ET VALEUR DU FICHIER DATAS.JSON 

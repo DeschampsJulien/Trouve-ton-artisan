@@ -1,4 +1,6 @@
-import Rating from "./rating"
+import Rating from "../rating/rating";
+
+import "./artisanCardContact.scss";
 
 // PROPS RECUPERE LES VALEURS NAME, SPECIALTY, EXT.. DECLAREES DANS LA BALISE ARTISANCARD
 function ArtisanCardContact (props) {
@@ -9,12 +11,12 @@ function ArtisanCardContact (props) {
                     {/* RECUPERATION D'UNE IMAGE */}
                     {/* <div className="my-4 mx-2">{<img className="img-fluid" src={user.avatar_url} alt="Avatar John Doe" />}</div> */}
                     <h3 className="card-title rounded p-3">{props.name}</h3>
-                    <p className="card-text">{props.specialty}</p>
+                    <p className="card-text"><strong>{props.specialty}</strong></p>
                     <p className="card-text">{props.location}</p>
                     <Rating 
                         stars={props.note}
-                        note={props.note}
                     />
+                    <p className="card-text">Note: {props.note}/5</p>
                     <p className="card-text">{props.email}</p>
                     <p className="card-text"><a href={props.website} target="_blank" rel="noreferrer">{props.website}</a></p>
                 </div>

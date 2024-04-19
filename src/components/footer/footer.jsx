@@ -39,16 +39,16 @@ function Footer() {
                     </div>
                     <div className="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
                         <h4 className="text-uppercase my-4">Catégories</h4>
-                        <div id={activeLink === "/category/Bâtiment"} className="my-3">
+                        <div className={`nav-item ${activeLink === "/category/Bâtiment"}`}>
                             <Link to="/category/Bâtiment" className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Bâtiment")}>Bâtiment</Link>
                         </div>
-                        <div id={activeLink === "/category/Services"} className="my-3">
+                        <div className={`nav-item ${activeLink === "/category/Services"}`}>
                             <Link to={"/category/Services"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Services")}>Services</Link>
                         </div>
-                        <div id={activeLink === "/category/Fabrication"} className="my-3">
+                        <div className={`nav-item ${activeLink === "/category/Fabrication"}`}>
                             <Link to={"/category/Fabrication"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Fabrication")}>Fabrication</Link>
                         </div>
-                        <div id={activeLink === "/category/Alimentation"} className="my-3">
+                        <div className={`nav-item ${activeLink === "/category/Alimentation"}`}>
                             <Link to={"/category/Alimentation"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Alimentation")}>Alimentation</Link>
                         </div>
                     </div>

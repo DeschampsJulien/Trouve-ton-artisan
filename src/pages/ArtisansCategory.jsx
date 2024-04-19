@@ -3,6 +3,7 @@ import ArtisansDatas from '../datas/datas.json';
 import ArtisanCard from "../components/artisanCard/artisanCard";
 
 function ArtisansCategory () {
+  
   // USEPARAMS HOOK PERMET D'ACCEDER AUX PARAMETRES ET VALEUR DU FICHIER DATAS.JSON 
   const { artisansCategory } = useParams();
 
@@ -23,6 +24,7 @@ function ArtisansCategory () {
           {selectedArtisans.map((artisan)=>(
             <ArtisanCard
               // DECLARATION DES PROPS POUR LE COMPONENT ARTISANTCARD
+              key={artisan.id}
               id={artisan.id}
               name={artisan.name}
               specialty={artisan.specialty}

@@ -9,8 +9,9 @@ import homeDecoration from "../assets/pictures/homeDecoration.jpg"
 
 function Home() {
 
+    const id = true;
     // FILTRE ET SELECTIONNE LES ARTISANS POUR LA VALEUR "TOP" EQUIVALENTE A TRUE
-    const artisansTop = ArtisansDatas.filter(artisan => artisan.top === true);
+    const artisansTop = ArtisansDatas.filter(artisan => artisan.top === id);
 
     return (
         <main>
@@ -58,6 +59,7 @@ function Home() {
                     {artisansTop.map((artisan)=>(
                         <ArtisanCard
                             // DECLARATION DES PROPS POUR LE COMPONENT ARTISANTCARD
+                            key={artisan.id}
                             id={artisan.id}
                             name={artisan.name}
                             specialty={artisan.specialty}

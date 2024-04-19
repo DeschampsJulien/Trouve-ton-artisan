@@ -32,6 +32,8 @@ function Batiment() {
                     {batimentArtisans.map((artisan)=>(
                         <ArtisanCard
                             // DECLARATION DES PROPS POUR LE COMPONENT ARTISANTCARD
+                            key={artisan.id}
+                            id={artisan.id}
                             name={artisan.name}
                             specialty={artisan.specialty}
                             note={artisan.note}

@@ -25,7 +25,7 @@ function ArtisansContact () {
                     {selectedArtisans.map((artisan)=>(
                         <ArtisanCardContact
                             // DECLARATION DES PROPS POUR LE COMPONENT ARTISANTCARDCONTACT
-                            id={artisan.id}
+                            key={artisan.id}
                             name={artisan.name}
                             specialty={artisan.specialty}
                             location={artisan.location}

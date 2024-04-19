@@ -49,16 +49,16 @@ function Header({ onSearch }) {
                         {/* <li className={`nav-item ${activeLink === "/category/Bâtiment" ? "active" : ""}`}>
                             <Link to="/category/Bâtiment" className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Bâtiment")}>Bâtiment</Link>
                         </li> */}
-                        <li id={activeLink === "/category/Bâtiment"} className="nav-item">
+                        <li className={`nav-item ${activeLink === "/category/Bâtiment"}`}>
                             <Link to="/category/Bâtiment" className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Bâtiment")}>Bâtiment</Link>
                         </li>
-                        <li id={activeLink === "/category/Services"} className="nav-item">
+                        <li className={`nav-item ${activeLink === "/category/Services"}`}>
                             <Link to={"/category/Services"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Services")}>Services</Link>
                         </li>
-                        <li id={activeLink === "/category/Fabrication"} className="nav-item">
+                        <li className={`nav-item ${activeLink === "/category/Fabrication"}`}>
                             <Link to={"/category/Fabrication"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Fabrication")}>Fabrication</Link>
                         </li>
-                        <li id={activeLink === "/category/Alimentation"} className="nav-item">
+                        <li className={`nav-item ${activeLink === "/category/Alimentation"}`}>
                             <Link to={"/category/Alimentation"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Alimentation")}>Alimentation</Link>
                         </li>
                     </ul>

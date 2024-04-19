@@ -8,7 +8,7 @@ import "./artisanCard.scss";
 function ArtisanCard (props) { 
 
     return (  
-        <div className="col-lg-4 col-md-6">
+        <div className="col-lg-4 col-md-6" key={props.id}>
             <div className="card text-center m-3">
                 <div className="card-body">
                     <h3 className="card-title rounded p-3">{props.name}</h3>

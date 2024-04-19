@@ -5,11 +5,12 @@ import { useState } from "react";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 
-import Home from "./pages/home";
-import ArtisansCategory from "./pages/artisansCategory";
-import ArtisansContact from "./pages/artisansContact";
-import ArtisansSearch from "./pages/artisansSearch";
-import Error404 from "./pages/error404";
+import Home from "./pages/Home";
+import ArtisansCategory from "./pages/ArtisansCategory";
+import ArtisansContact from "./pages/ArtisansContact";
+import ArtisansSearch from "./pages/ArtisansSearch";
+import Error404 from "./pages/Error404";
+
 import UpPage from "./assets/pictures/upPage.png";
 
 import "./App.scss";

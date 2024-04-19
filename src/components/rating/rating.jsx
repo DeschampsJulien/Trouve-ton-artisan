@@ -13,11 +13,11 @@ function Rating ({stars}) {
     
     return (
         <div className="m-3">
-            {fullStarsCount.map((fullStarsCount) => (
-                <span>{fullStarsCount}</span>
+            {fullStarsCount.map((fullStarsCount, index) => (
+                <span key={index}>{fullStarsCount}</span>
             ))}
-            {emptyStarsCount.map((emptyStarsCount) => (
-                <span>{emptyStarsCount}</span>
+            {emptyStarsCount.map((emptyStarsCount, index) => (
+                <span key={index}>{emptyStarsCount}</span>
             ))}
         </div>
     );

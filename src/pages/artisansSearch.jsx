@@ -13,6 +13,7 @@ function searchResult ({ searchValue }) {
     if (results.length > 0) {
         const artisans = results.map((artisan) => (
             <ArtisanCard
+                key={artisan.id}
                 id={artisan.id}
                 name={artisan.name}
                 specialty={artisan.specialty}
@@ -20,7 +21,7 @@ function searchResult ({ searchValue }) {
                 note={artisan.note}
             />
         ));
-
+                
         content = (
             <main>
                 <div className="decoration-main">

@@ -5,7 +5,7 @@ import "./artisanCardContact.scss";
 // PROPS RECUPERE LES VALEURS NAME, SPECIALTY, EXT.. DECLAREES DANS LA BALISE ARTISANCARD
 function ArtisanCardContact (props) {
     return (
-        <div className="col-lg-6 col-md-6">
+        <div className="col-lg-6 col-md-6" key={props.id}>
             <div className="card text-center m-3">
                 <div className="card-body">
                     {/* RECUPERATION D'UNE IMAGE */}

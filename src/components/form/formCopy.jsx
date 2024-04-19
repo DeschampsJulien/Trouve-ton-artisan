@@ -9,7 +9,7 @@ import "./form.scss";
 function Formulaire() {  
 
     // États pour stocker le texte et la valeur du champ de formulaire
-    const [information, setInformation] = useState('');
+    const [information, setInformation] = useState('');  
     const [showForm, setShowForm] = useState(true);
 
     // Fonction pour mettre à jour le texte au clic, si le formulaire est rempli

@@ -1,5 +1,5 @@
-@import "../../assets/styles/colors.scss";
 @import "../../assets/styles/fonts.scss"; 
+@import "../../assets/styles/colors.scss";
 
 header {
       background-color: $color0;
@@ -32,7 +32,7 @@ header {
             border-radius: 10px;
     
             &:hover {
-                  box-shadow: 0 0 20px 0px $color6;
+                  box-shadow: 0 0 20px 0px $color4;
                   border-radius: 10px;
             }  
     

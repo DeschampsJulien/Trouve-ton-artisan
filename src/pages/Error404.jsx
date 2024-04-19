@@ -1,6 +1,7 @@
 import Error from "../assets/pictures/erreur404.jpg";
 
 function Error404 () {
+
   return (
     <section className="container">
       <h2 className="text-center m-5">Erreur 404</h2>

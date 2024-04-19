@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./burgerMenu.scss";
 
 function BurgerMenu () {
+       
       const [isOpen, setIsOpen] = useState(false);
 
       function toggleMenu () {

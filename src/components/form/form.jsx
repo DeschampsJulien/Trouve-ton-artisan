@@ -5,7 +5,7 @@ import Felicitation from "../../assets/pictures/felicitation.jpg";
 import "./form.scss";
 
 function Formulaire() {  
-
+    
     // États pour stocker le texte et la valeur du champ de formulaire
     const [text, setText] = useState('');
     // const [alert, setAlert] = useState(false);

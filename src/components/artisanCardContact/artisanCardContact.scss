@@ -1,0 +1,46 @@
+@import "../../assets/styles/fonts.scss";
+@import "../../assets/styles/colors.scss";
+
+.card {
+      background-color: $color0;
+      
+      
+      h3 {
+            color: $color4;
+      
+            font: {
+            family: "Graphik-Bold", sans-serif;
+            size: 2rem;
+            weight: normal;
+            }
+      }
+    
+      p {
+            color: $color4;
+      
+            font: {
+            family: "Graphik-Light", sans-serif;
+            size: 1.5rem;
+            weight: normal;
+            }
+      }
+    
+      .card-title {
+            background-color: $color2;
+      }
+    
+      .btn {
+            background-color: $color2;
+    
+            font: {
+            family: "Graphik-Regular", sans-serif;
+            size: 1rem;
+            weight: normal;
+            }
+            
+            &:hover {
+            background-color: $color6;
+            }
+      }
+}
+    

@@ -1,0 +1,18 @@
+@import "../../assets/styles/fonts.scss";
+@import "../../assets/styles/colors.scss";
+
+form {
+      .btn {
+            background-color: $color2;
+    
+            font: {
+            family: "Graphik-Regular", sans-serif;
+            size: 1rem;
+            weight: normal;
+            }
+        
+            &:hover {
+            background-color: $color6;
+            }
+      }
+}

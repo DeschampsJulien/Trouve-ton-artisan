@@ -1,4 +1,5 @@
 import ArtisansDatas from '../datas/datas.json';
+
 import ArtisanCard from "../components/artisanCard/artisanCard";
 
 function searchResult ({ searchValue }) {

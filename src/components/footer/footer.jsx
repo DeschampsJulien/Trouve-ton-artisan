@@ -39,21 +39,22 @@ function Footer() {
                     </div>
                     <div className="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
                         <h4 className="text-uppercase my-4">Catégories</h4>
-                        <div className={`nav-item ${activeLink === "/category/Bâtiment"}`}>
+                        <div className={`nav-item my-3 ${activeLink === "/category/Bâtiment"}`}>
                             <Link to="/category/Bâtiment" className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Bâtiment")}>Bâtiment</Link>
                         </div>
-                        <div className={`nav-item ${activeLink === "/category/Services"}`}>
+                        <div className={`nav-item my-3 ${activeLink === "/category/Services"}`}>
                             <Link to={"/category/Services"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Services")}>Services</Link>
                         </div>
-                        <div className={`nav-item ${activeLink === "/category/Fabrication"}`}>
+                        <div className={`nav-item my-3 ${activeLink === "/category/Fabrication"}`}>
                             <Link to={"/category/Fabrication"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Fabrication")}>Fabrication</Link>
                         </div>
-                        <div className={`nav-item ${activeLink === "/category/Alimentation"}`}>
+                        <div className={`nav-item my-3 ${activeLink === "/category/Alimentation"}`}>
                             <Link to={"/category/Alimentation"} className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Alimentation")}>Alimentation</Link>
                         </div>
                     </div>
                     <div className="col-lg-6 col-xl-6 mx-auto mb-4">
                         <h4 className="text-uppercase my-4">Contact</h4>
+                        <address>
                             <p className="my-3">
                                 <i className="fas fa-home me-3"></i>101 cours Charlemagne CS 20033 69269 LYON CEDEX 02
                             </p>
@@ -66,6 +67,7 @@ function Footer() {
                             <p className="my-3">
                                 <i className="fas fa-print me-3"></i>+33 (0)4 12 17 21 11
                             </p>
+                        </address>
                     </div>
                 </div>
             </div>

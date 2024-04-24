@@ -10,11 +10,11 @@ function BurgerMenu () {
       };
 
       return (
-      <div className={`burger-menu ${isOpen ? "open" : ""}`} onClick={toggleMenu} tabIndex={0}>
-            <div className="bar1"></div>
-            <div className="bar2"></div>
-            <div className="bar3"></div>
-      </div>
+      <span className={`burger-menu ${isOpen ? "open" : ""}`} onClick={toggleMenu} tabIndex={0}>
+            <span className="bar1"></span>
+            <span className="bar2"></span>
+            <span className="bar3"></span>
+      </span>
       );
 };
 

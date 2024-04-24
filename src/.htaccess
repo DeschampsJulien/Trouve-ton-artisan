@@ -1,0 +1,35 @@
+# Protéger  le fichier .htaccess lui même
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+# Protéger  un  fichier en particulier
+<files App.jsx>
+order allow,deny
+deny from all
+</files>
+
+# Forcer la redirection en Https
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]|
+
+# Désactive la navigation dans les répertoires
+Options All-Indexes
+
+#Désactiver l’utilisation des images jpg et png sur son serveur
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www.)?exemple.com.com/.*$ [NC]
+RewriteRule .(jpg|png)$ https://www.exemple.com [R,L]
+
+# Autoriser tous le monde, sauf exceptions
+<Limit GET POST PUT>
+order allow,deny
+allow from all
+deny from 123.456.7xx
+deny from 93.121.7xx
+deny from 223.956.7xx
+deny from 128.456.7xx
+</LIMIT>
+ 

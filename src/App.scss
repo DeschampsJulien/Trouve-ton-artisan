@@ -33,7 +33,15 @@ main {
       background-color: $color1;
       width: 3%;
       height: 5vh;
-      border-top-left-radius: 50%;
+      border-top-left-radius: 70%;
+    }
+
+    // MODIFICATION EN DESOUS DE 480 PX.
+    @media screen and (max-width: 480px) {
+      .decoration-main-left {
+        width: 10%;
+        border-top-left-radius: 80%; 
+      }
     }
 
     .decoration-main-center {
@@ -43,13 +51,26 @@ main {
       border-top: 5px solid $color5;
     }
 
+    @media screen and (max-width: 480px) {
+      .decoration-main-center {
+        width: 60%;
+      }
+    }
+
     .decoration-main-right {
       background-color: $color1;
       width: 3%;
       height: 5vh;
-      border-top-right-radius: 50%;
+      border-top-right-radius: 70%;
       border-top: 5px solid $color5;
       border-right: 3px solid $color5;
+    }
+
+    @media screen and (max-width: 480px) {
+      .decoration-main-right {
+        width: 10%;
+        border-top-right-radius: 80%;
+      }
     }
   }
 }

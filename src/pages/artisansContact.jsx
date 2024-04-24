@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import ArtisansDatas from '../datas/datas.json';
 import ArtisanCardContact from "../components/artisanCardContact/artisanCardContact";
-import Form from "../components/form/formCopy";
+import Form from "../components/form/form";
 
 function ArtisansContact () {
 

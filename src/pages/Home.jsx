@@ -2,40 +2,24 @@ import Step from "../components/step/step";
 import ArtisanCard from "../components/artisanCard/artisanCard";
 import ArtisansDatas from "../datas/datas.json";
 
-// import ArtisanBoulanger from "../assets/pictures/artisan-boulanger.jpg";
-// import ArtisanCharpentier from "../assets/pictures/artisan-charpentier.jpg";
-// import ArtisanFleuriste from "../assets/pictures/artisan-fleuriste.jpg";
 import homeDecoration from "../assets/pictures/homeDecoration.jpg"
 
 function Home() {
 
-    const id = true;
     // FILTRE ET SELECTIONNE LES ARTISANS POUR LA VALEUR "TOP" EQUIVALENTE A TRUE
-    const artisansTop = ArtisansDatas.filter(artisan => artisan.top === id);
+    const artisansTop = ArtisansDatas.filter(artisan => artisan.top === true);
 
     return (
         <main>
-            <div className="decoration-main">
+            
+            <div className="decoration-main" >
                 <div className="decoration-main-left"></div>
                 <div className="decoration-main-center"></div>
                 <div className="decoration-main-right"></div>
             </div>
             <section className="container">
-                <h1 className="text-center m-5">Les artisans de la région Auvergne-Rhône-Alpes</h1>
 
-                {/* <div className="container">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 m-2">
-                            <img src={ArtisanBoulanger} width="220" alt="..." />
-                        </div>
-                        <div className="col-lg-4 col-md-6 m-2">
-                            <img src={ArtisanCharpentier} width="220" alt="..." />
-                        </div>
-                        <div className="col-lg-4 col-md-none m-2">
-                            <img src={ArtisanFleuriste} width="220" alt="..." />
-                        </div>
-                    </div>
-                    </div> */}
+                <h1 className="text-center m-5">Les artisans de la région Auvergne-Rhône-Alpes</h1>
 
                 <h2 className="text-center m-5">Comment trouver mon artisan ?</h2>
                 <div className="row">

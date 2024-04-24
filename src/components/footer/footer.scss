@@ -36,14 +36,22 @@ footer {
             height: 5vh;
             display: flex;
             justify-content: center;
-            
+
             .decoration-footer-left {
                   background-color: $color1;
                   width: 3%;
                   height: 5vh;
-                  border-bottom-left-radius: 50%;
+                  border-bottom-left-radius: 70%;
                   border-bottom: 5px solid $color5;
                   border-left: 3px solid $color5;
+            }
+
+            // MODIFICATION EN DESOUS DE 480 PX.
+            @media screen and (max-width: 480px) {
+                  .decoration-footer-left {
+                        width: 10%;
+                        border-bottom-left-radius: 80%; 
+                  }
             }
       
             .decoration-footer-center {
@@ -53,11 +61,23 @@ footer {
                   border-bottom: 5px solid $color5;
             }
       
+            @media screen and (max-width: 480px) {
+                  .decoration-footer-center {
+                        width: 60%;
+                  }
+            }
+
             .decoration-footer-right {
                   background-color: $color1;
                   width: 3%;
-                  height: 5vh;
-                  border-bottom-right-radius: 50%;
+                  border-bottom-right-radius: 70%;
             }
-      } 
+
+            @media screen and (max-width: 480px) {
+                  .decoration-footer-right {
+                        width: 10%;
+                        border-bottom-right-radius: 80%;
+                  }
+            }
+      }  
 }

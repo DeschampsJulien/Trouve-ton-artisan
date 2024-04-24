@@ -40,15 +40,11 @@ function Header({ onSearch }) {
                     <img src={Logo} width="200" alt="logo du site trouve ton artisan région Auvergne Rhône-Alpes" className="shadow-drop-center" tabIndex={0} />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    {/* <span className="navbar-toggler-icon"></span> */}
                     <BurgerMenu />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul className="navbar-nav me-auto mx-3 mb-2 mb-lg-0">
-                        {/* <li className={`nav-item ${activeLink === "/category/Bâtiment" ? "active" : ""}`}>
-                            <Link to="/category/Bâtiment" className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Bâtiment")}>Bâtiment</Link>
-                        </li> */}
                         <li className={`nav-item ${activeLink === "/category/Bâtiment"}`}>
                             <Link to="/category/Bâtiment" className="nav-link" aria-current="page" onClick={() => handleClick ("/category/Bâtiment")}>Bâtiment</Link>
                         </li>

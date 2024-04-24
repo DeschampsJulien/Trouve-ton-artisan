@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import ArtisansDatas from '../datas/datas.json';
+
 import ArtisanCard from "../components/artisanCard/artisanCard";
 
 function ArtisansCategory () {

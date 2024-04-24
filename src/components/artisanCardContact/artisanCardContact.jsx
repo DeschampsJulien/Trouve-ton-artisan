@@ -8,8 +8,6 @@ function ArtisanCardContact (props) {
         <div className="col-lg-6 col-md-6" key={props.id}>
             <div className="card text-center m-3">
                 <div className="card-body">
-                    {/* RECUPERATION D'UNE IMAGE */}
-                    {/* <div className="my-4 mx-2">{<img className="img-fluid" src={user.avatar_url} alt="Avatar John Doe" />}</div> */}
                     <h3 className="card-title rounded p-3">{props.name}</h3>
                     <p className="card-text"><strong>{props.specialty}</strong></p>
                     <p className="card-text">{props.location}</p>
@@ -23,8 +21,6 @@ function ArtisanCardContact (props) {
             </div>
             <div className="card text-center m-3">
                 <article className="card-body">
-                    {/* RECUPERATION D'UNE IMAGE */}
-                    {/* <div className="my-4 mx-2">{<img className="img-fluid" src={user.avatar_url} alt="Avatar John Doe" />}</div> */}
                     <h3 className="card-title rounded p-3">A propos</h3>
                     <p className="card-text">{props.about}</p>
                 </article>

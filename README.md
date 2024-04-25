@@ -38,7 +38,11 @@ npm test
   Consultez la section sur [l'exécution de tests](https://facebook.github.io/create-react-app/docs/running-tests) pour plus d'informations.
 </p>
 
-### `npm run build`
+### Run build
+
+```sh
+npm run build
+```
 
 Construit l'application pour la production dans le dossier `build`.\
 Il regroupe correctement React en mode production et optimise la construction pour les meilleures performances.
